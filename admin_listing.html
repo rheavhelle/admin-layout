@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<title>Listings</title>
+
+	 <!-- Bootstrap Core CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+
+		<!-- Custom CSS -->
+	<link href="css/simple-sidebar.css" rel="stylesheet">
+
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	 <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+	<!-- DataTables CSS -->
+	<link rel="stylesheet" type="text/css" href="css/jquery.dataTables.css">
+	  
+	<!-- jQuery -->
+	<script type="text/javascript" charset="utf8" src="js/jquery.js"></script>
+	  
+	<!-- DataTables -->
+	<script type="text/javascript" charset="utf8" src="js/jquery.dataTables.js"></script>
+
+	<link href="css/admin_style.css" rel="stylesheet">
+	<link href="css/bootstrap.min.css" rel="stylesheet"> 
+	<link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.2.0/yeti/bootstrap.min.css" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+</head>
+
+<script type="text/javascript" charset="utf-8">
+$(document).ready(function() {
+  $('#Datatable').dataTable();
+} );
+
+$(document).ready(function() {
+  $('#Datatable2').dataTable();
+} );
+</script>
+
+<body>
+
+<div id="wrapper">
+	<!-- Sidebar -->  
+ <div id="sidebar-wrapper">  
+
+  	<ul  class="sidebar-nav nav-stacked" style="border-top: 1px solid #B4B4B4;">
+		<li class="active"><a href="admin_home.html"> <i class="fa fa-home"></i> Home</a></li>
+		<li class="categories"><a href="admin_category.html"><i class="fa fa-list-alt"></i> Categories</a></li>
+		<li class="districts"><a href="admin_district.html"><i class="fa fa-map-marker"></i> Districts</a></li>	
+		<li class="listings"><a href="admin_listing.html"><i class="fa fa-list-ol"></i> Listings</a></li>
+		<li class="logout" ><a href="admin_logout.html"><i class="fa fa-sign-out"></i> Logout</a></li>
+	</ul>
+</div>
+	<!-- /#sidebar-wrapper -->
+
+<!-- Page Content -->
+ <div id="page-content-wrapper">
+ 	<div class="container-fluid">
+	  <div class="row">
+	   <div class="col-lg-12">
+	    <a href="#menu-toggle" class="btn btn-info animated bounceInLeft" id="menu-toggle">Menu</a>
+	     <hr/>
+
+	     <div class="panel panel-default">
+							<div class="panel-heading">
+								<h3 class="panel-title bold">Restaurant Listings</h3>
+							</div>
+							<div class="panel-body">
+								<div class="table">
+					    <table id="Datatable" class="table table-striped">
+					     <thead>
+					      <tr>
+					       <th>Establishment Name</th>
+					       <th>Category Type</th>
+					       <th>District</th>
+					       <th>Date Created</th>
+					       <th>Status</th>
+					      </tr>
+					   		</thead>
+
+					     <tbody>
+					      <tr>
+					      	<td>Khop Chai Deu Restaurant & Bar</td>
+					      	<td>Restaurant</td>
+					      	<td>Vientiane</td>
+					      	<td>11/11/2013</td>
+        				<td>Active</td>
+					      </tr>
+					      <tr>
+					      	<td>Kong View Restaurant and Bar</td>
+					      	<td>Restaurant</td>
+												<td>Vientiane</td>
+        				<td>5/12/2014</td>
+        				<td>Active</td>
+					      </tr>
+					      <tr>
+					      	<td>Bor Pen Nyang restaurant and Bar</td>
+					      	<td>Restaurant</td>
+					      	<td>Vientiane</td>
+        				<td>5/12/2014</td>
+        				<td>Active</td>
+					      </tr>
+					     </tbody>
+					    </table>
+					   </div> <!-- table div -->
+							</div>
+						</div> <!--categories panel-->
+
+						<br>
+
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h3 class="panel-title bold">Bar & Night Club Listings</h3>
+							</div>
+							<div class="panel-body">
+								<div class="table">
+					    <table id="Datatable2" class="table table-striped">
+					     <thead>
+					      <tr>
+					       <th>Establishment Name</th>
+					       <th>Category Type</th>
+					       <th>District</th>
+					       <th>Date Created</th>
+					       <th>Status</th>
+					      </tr>
+					   		</thead>
+
+					     <tbody>
+					      <tr>
+					      	<td>Lao Bowling Centre</td>
+					      	<td>Bars & Night Clubs</td>
+					      	<td>Vientiane</td>
+					      	<td>11/11/2013</td>
+        				<td>Active</td>
+					      </tr>
+					      <tr>
+					      	<td>Catwalk Pub</td>
+					      	<td>Bars & Night Clubs</td>
+												<td>Vientiane</td>
+        				<td>5/12/2014</td>
+        				<td>Active</td>
+					      </tr>
+					      <tr>
+					      	<td>Romeo</td>
+					      	<td>Bars & Night Clubs</td>
+					      	<td>Vientiane</td>
+        				<td>5/12/2014</td>
+        				<td>Active</td>
+					      </tr>
+					     </tbody>
+					    </table>
+					   </div> <!-- table div -->
+							</div>
+						</div> <!--categories panel-->
+
+	   </div> <!-- column -->
+	  </div> <!-- row -->
+ 	</div> <!-- contianer fluid -->
+ </div> <!-- wrapper -->
+<!-- /#page-content-wrapper -->
+
+
+</div>
+<!-- /#wrapper -->
+
+<!-- jQuery Version 1.11.0 -->
+<script src="js/jquery-1.11.0.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+<!-- Menu Toggle Script -->
+<script>
+	$("#menu-toggle").click(function(e) {
+ 	e.preventDefault();
+ $("#wrapper").toggleClass("toggled");
+	});
+</script>
+
+</body>
+
+</html>
